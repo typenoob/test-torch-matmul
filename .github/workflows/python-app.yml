@@ -21,7 +21,7 @@ jobs:
         arch: [x64, arm64, x86]
         python-version: ["3.10"]
         
-    runs-on: ${{ matrix.runs-on || matrix.os }}
+    runs-on: ${{ matrix.os || matrix.arch }}
 
     steps:
     - uses: actions/checkout@v4
