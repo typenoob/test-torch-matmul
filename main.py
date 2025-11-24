@@ -17,6 +17,7 @@ def test():
 
     print(f"Decimal Result: {val_as_float:.20f}")
     print(f"Hex Representation: {val_as_hex}")
+    assert val_as_float == 524298.68750000000000000000
 
 if __name__ == "__main__":
     print_system_info()
