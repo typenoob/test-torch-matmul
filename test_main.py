@@ -14,6 +14,7 @@ def test_matrix_multiplication():
     x = torch.linspace(0, 1, steps=N*N, dtype=torch.float32).reshape(N, N)
     y = torch.linspace(0, 1, steps=N*N, dtype=torch.float32).reshape(N, N).mT
     result = torch.matmul(x, y)
+    print(result)
     final_sum = result.sum()
     val_as_float = final_sum.item()
     val_as_hex = hex(final_sum.view(torch.int32).item())
